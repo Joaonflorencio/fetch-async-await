@@ -26,10 +26,49 @@ header {
   padding: 20px;
 }
 
+.pokemon-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pokemon-card:hover .pokemon-image {
+  transform: rotateY(180deg);
+}
+
 .pagination {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+.page-link {
+  margin: 0 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  background-color: #f37021;
+  color: white;
+  border: 1px solid #f37021;
+  border-radius: 5px;
+}
+
+.page-link:hover {
+  background-color: #fff;
+  color: #f37021;
 }
 
 .error-message {
